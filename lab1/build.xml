@@ -1,0 +1,49 @@
+<project name="lab1" default = "copy" >
+<target name="init">
+ <echo message="Building lab1 Project" />
+</target>
+<target name="create" depends ="init">
+ <delete dir= "C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1\" />
+ <mkdir dir= "C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1\" />
+ <mkdir dir= "C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1\images" />
+ <mkdir dir= "C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1\WEB-INF" />
+</target>
+
+<target name="copy" depends ="create">
+ <copy file= "E:\study\6sem\internet\lab1\web.xml"
+ todir="C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1\WEB-INF" />
+ <copy file= "E:\study\6sem\internet\lab1\index.html"
+ todir="C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1" />
+ <copy file= "E:\study\6sem\internet\lab1\address.html"
+ todir="C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1" />
+ <copy file= "E:\study\6sem\internet\lab1\education.html"
+ todir="C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1" />
+ <copy file= "E:\study\6sem\internet\lab1\images\Inkedassaas_LI.jpg"
+ todir="C:\Program Files (x86)\Apache Software Foundation\Tomcat 9.0\webapps\lab1\images" />
+ </target>
+</project>
+
+<!--<project name="AS_3082BVA" default = "copy" >
+<target name="init">
+ <echo message="Building AS_3082BVA Project" />
+</target>
+<target name="create" depends ="init">
+ <delete dir= "\\172.16.193.69\webapps\AS_3082BVA\" />
+ <mkdir dir= "\\172.16.193.69\webapps\AS_3082BVA\" />
+ <mkdir dir= "\\172.16.193.69\webapps\AS_3082BVA\images" />
+ <mkdir dir= "\\172.16.193.69\webapps\AS_3082BVA\WEB-INF" />
+</target>
+
+<target name="copy" depends ="create">
+ <copy file= "E:\study\6sem\internet\WEB-INF\web.xml"
+ todir="\\172.16.193.69\webapps\AS_3082BVA\WEB-INF" />
+ <copy file= "E:\study\6sem\internet\WEB-INF\index.html"
+ todir="\\172.16.193.69\webapps\AS_3082BVA\" />
+ <copy file= "E:\study\6sem\internet\WEB-INF\address.html"
+ todir="\\172.16.193.69\webapps\AS_3082BVA\" />
+ <copy file= "E:\study\6sem\internet\WEB-INF\education.html"
+ todir="\\172.16.193.69\webapps\AS_3082BVA\" />
+ <copy file= "E:\study\6sem\internet\WEB-INF\images\Inkedassaas_LI.jpg"
+ todir="\\172.16.193.69\webapps\AS_3082BVA\images" />
+ </target>
+</project>-->
