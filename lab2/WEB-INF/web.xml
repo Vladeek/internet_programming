@@ -12,6 +12,22 @@
  <servlet-name>Sss</servlet-name>
  <url-pattern>/Sss</url-pattern>
  </servlet-mapping> 
+ <servlet>
+ <servlet-name>Ggg</servlet-name>
+ <servlet-class>Ggg</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Ggg</servlet-name>
+ <url-pattern>/Ggg</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>Ppp</servlet-name>
+ <servlet-class>Ppp</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Ppp</servlet-name>
+ <url-pattern>/Ppp</url-pattern>
+ </servlet-mapping> 
  <welcome-file-list>
  <welcome-file>index.html</welcome-file>
 </welcome-file-list> 
